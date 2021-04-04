@@ -1,39 +1,65 @@
+/*vars*/
 :root {
-
     --thema1: #F2F2F2; 
     --thema2: #D9D9D9; 
     --thema3: #737373; 
     --thema4: #202020; 
     --thema5: #0D0D0D; 
 }
+/*global rules*/
 *{
     margin: 0;  
     box-sizing: border-box;
 }
+html {
+    scroll-padding-top: 50px; /* height of sticky header */
+  }
+/*layout things*/
 body{
     background-color: var(--thema5);
     color: var(--thema1);
     font-family: Arial, sans-serif;
 }
-a:link,a:visited{
-    text-decoration: none;
-    color: var(--thema1);
-}
 .content{
     max-width: 1200px;
-    min-width: 768px;
+    min-width: 875px;
     margin: auto;
-    height: 750px;
+    height: 100vh;
     padding-left: 20px;
     padding-right: 20px;
     display : flex;
     align-items : center;
 }
+
 .container{
     vertical-align: middle;
 }
-
-
+main{
+    margin-top: 50px;
+}
+/*global rules*/
+a:link,a:visited{
+    text-decoration: none;
+    color: var(--thema1);
+}
+a:hover{
+    color: var(--thema3);
+}
+h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+h2{
+    font-size: 30px;
+}
+header p{
+    padding-top: 50px;
+}
+p{
+    color: var(--thema2);
+    font-size: 20px;
+    max-width: 700px;
+}
 /*navigation*/
 nav{
     overflow: hidden;
@@ -72,11 +98,8 @@ nav a:hover{
 nav a:link,nav a:visited{
     color: var(--thema4);
 }
+/*Introduction*/
 
-/*About*/
-main{
-    margin-top: 50px;
-}
 header {
     background-color:var(--thema4);
     background-image: url(bcTexture.jpg);
@@ -86,32 +109,99 @@ header {
     vertical-align: middle;
     background-position: center center;
 }
-
-h1{
-    font-size: 40px;
+header h1{
+    padding-bottom: 0;
 }
-h2{
-    font-size: 30px;
-}
-header p{
-    padding-top: 50px;
-}
-p{
-    color: var(--thema2);
-    font-size: 20px;
-    max-width: 700px;
-}
+/*About me*/
 #about h1{
     padding-bottom: 30px;
 }
-#projects {
-    background-color: var(--thema5);
-}
-#contact {
-    background-color: var(--thema5);
-}
+/*Education*/
 #education {
     background-color: var(--thema4);
+}
+#education dt{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+#education dd{
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+#education .date{
+    font-style: italic;
+    color: var(--thema2);
+}
+/*Projects menu*/
+.projectMenu{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+i{
+    font-style: Awesome;
+    color:var(--thema1);
+    font-size: 50px;
+    padding-left: 20px;
+}
+#projectsMenu {
+    background-color: var(--thema3);
+}
+#projectsMenu h1{
+    float: left;
+    color: var(--thema1);
+    padding-bottom: 0;
+}
+.dropdown {
+    display: inline-block;
+    background-color: var(--thema3);
+    color: var(--thema5);
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #131313;
+    left: 0;
+    margin-top: 10px;
+    border-top: solid 3px  var(--thema5);
+    min-width: 100%;
+}
+.dropdown-content ul{
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.dropdown-content li{
+    font-size: 20px;
+    margin-left:20px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.dropdown-content li::before {content: "> "; color:var(--thema3);
+    display: inline-block; width: 1em;
+    margin-left: -1em}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Projects*/
+#projects {
+    background-color: var(--thema4);
+}
+.projectsCont{
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*Contact*/
+#contact {
+    background-color: var(--thema5);
 }
 #contact .content{
     height: 200px;
