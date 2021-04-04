@@ -1,0 +1,14 @@
+:root {
+
+    --thema1: #F2F2F2; 
+    --thema2: #D9D9D9; 
+    --thema3: #737373; 
+    --thema4: #262626; 
+    --thema5: #0D0D0D; 
+}
+body{
+    background-color: var(--thema2);
+    color: #F2F2F2;
+    
+}
+
