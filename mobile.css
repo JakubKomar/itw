@@ -1,106 +1,55 @@
-/*vars*/
-:root {
-    --thema1: #F2F2F2; 
-    --thema2: #D9D9D9; 
-    --thema3: #737373; 
-    --thema4: #202020; 
-    --thema5: #0D0D0D; 
+/*formating things*/
+h1,h2,h3,li,dd,dt{
+    text-align: center;
 }
-
-
-/*mobile nav*/
+p{
+    text-align: left;
+    max-width: 100%;
+}
+dl{
+    margin: auto;
+}
+dl{
+    width: 300px;
+}
+footer dd{
+    margin-right: 0;
+}
+/*nav */
 nav{
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: var(--thema1);
-    letter-spacing:0.05em;
+    display: none;
+    margin-top: 50px;
 }
-nav .content{
-    height: auto;
-    padding-left: 0;
-    padding-right: 0;
+#navDropButt i{
+    position: fixed;
+    right: 10px;
 }
 nav ul{
-    padding-inline-start: 0px;
-    list-style-type: none;
+    width: 100%;
 }
 nav li{
     float: none;
-    text-decoration: none;
 }
 nav a{
-    font-family: Georgia, serif;
-    float: none;
-    display: block;
-    text-align: center;
-    color: var(--thema5);
-    font-size:25px;
-    padding: 14px 16px;
-}
-nav a:hover{
-    background-color: var(--thema4);
-    color: var(--thema1)!important;
-}
-nav a:link,nav a:visited{
-    color: var(--thema4);
-}
-
-
-
-
-.projectMenu{
-    max-width: 1200px;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-i{
-    font-style: Awesome;
-    color:var(--thema1);
-    font-size: 50px;
-    padding-left: 20px;
-}
-#projectsMenu {
-    background-color: var(--thema3);
-}
-#projectsMenu h1{
-    float: left;
-    color: var(--thema1);
-    padding-bottom: 0;
-}
-.dropdown {
-    display: inline-block;
-    background-color: var(--thema3);
-    color: var(--thema5);
-    padding-left: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #131313;
-    left: 0;
-    margin-top: 10px;
     width: 100%;
+    text-align: left;
 }
-.dropdown-content ul{
-    max-width: 1200px;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.dropdown-content li{
-    font-size: 20px;
-    margin-left:20px ;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.dropdown-content li::before {content: "> "; color:var(--thema3);
-    display: inline-block; width: 1em;
-    margin-left: -1em}
-.dropdown:hover .dropdown-content {
+#navDropButt{
+    position: fixed;
+    top:0;
     display: block;
+    width: 100%;
+    height: 50px;
+    color: var(--thema5);
+    font-size: 40px;
+    text-align: left;
+    font-family: Georgia, serif;
 }
+.projectMenu{
+    padding-left: 5px;
+    padding-right: 0px;
+}
+.projectMenu li{
+    text-align: left;
+}
+.show {display: block;}

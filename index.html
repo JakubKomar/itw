@@ -3,16 +3,20 @@
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>My web</title>
+        <link rel="icon" sizes="192x192"  href="android-icon-192x192.png">   
         <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">  
         <link rel="stylesheet" href="main.css" type="text/css">
         <link rel="stylesheet" href="mobile.css" type="text/css"
             media="screen and (max-width: 860px)">
+        <link rel="stylesheet" href="smallW.css" type="text/css"
+            media="screen and (max-width: 330px)">
     </head>
     <body>
-        <nav>
+        <button onclick="myFunction()" class="dropbtn" id="navDropButt">Menu<i class="fas fa-bars" id="navDropIcon"></i></button>
+        <nav id="navig">
             <div class="content">
-                <ul>
+                <ul class="dropdownMenu">
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="index.html#introduction">Introduction</a></li>
                     <li><a href="index.html#about">About me</a></li>
@@ -22,6 +26,18 @@
                 </ul>
             </div>
         </nav>
+        <script>    //button script
+            function myFunction() {     //click on button
+              document.getElementById("navig").classList.toggle("show");
+            }
+            window.onclick = function(event)    //click somewhere alse
+            {
+                if (!(event.target.matches('.dropbtn')||event.target.matches('#navDropIcon')))
+                {
+                    document.getElementById("navig").classList.remove("show");
+                }
+            }
+            </script>
         <main>
             <header id="introduction" >
                 <div class="content">
