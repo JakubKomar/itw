@@ -20,7 +20,7 @@ dl{
 footer dd{
     margin-right: 0;
 }
-/*nav */
+/*nav modification to dropdown*/
 nav{
     display: none;
     margin-top: 50px;
@@ -47,6 +47,7 @@ nav a{
     height: 50px;
     color: var(--thema5);
     font-size: 40px;
+    border: none;
     text-align: left;
     font-family: Georgia, serif;
 }

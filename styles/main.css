@@ -43,9 +43,6 @@ main{
     margin-top: 50px;
 }
 /*global rules*/
-i{
-    font-style: Awesome;
-}
 a:link,a:visited{
     text-decoration: none;
     color: var(--thema1);
@@ -87,7 +84,7 @@ nav .content{
     padding-right: 0;
 }
 nav ul{
-    padding-inline-start: 0px;
+    padding-left: 0;
     list-style-type: none;
 }
 nav li{
@@ -148,7 +145,7 @@ header h1{
     font-style: italic;
     color: var(--thema2);
 }
-/*Projects menu*/
+/*Projects dropdown menu*/
 .projectMenu{
     max-width: 1200px;
     margin: auto;
@@ -168,6 +165,7 @@ header h1{
     color: var(--thema1);
     padding-bottom: 0;
 }
+/*dropdown menu content*/
 .dropdown {
     display: inline-block;
     background-color: var(--thema3);
@@ -208,7 +206,7 @@ header h1{
     background-color: var(--thema4);
 }
 #projects ul{
-    padding-inline-start: 0px;
+    padding-left: 0;
     list-style: none;
 }
 #projects li{
