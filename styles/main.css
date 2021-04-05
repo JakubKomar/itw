@@ -1,3 +1,8 @@
+/*
+autor: Jakub Komárek
+login:  xkomar33
+*/
+
 /*vars*/
 :root {
     --thema1: #F2F2F2; 
@@ -109,7 +114,7 @@ nav a:link,nav a:visited{
 
 header {
     background-color:var(--thema4);
-    background-image: url(bcTexture.jpg);
+    background-image: url(../img/bcTexture.jpg);
     background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;
