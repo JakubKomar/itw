@@ -226,6 +226,14 @@ header h1{
     padding-left: 20px;
     padding-right: 20px;
 }
+#projects p{
+    float: left;
+}
+img{
+    width: 200px;
+    float: left;
+    
+}
 /*Contact*/
 #contact {
     background-color: var(--thema5);
